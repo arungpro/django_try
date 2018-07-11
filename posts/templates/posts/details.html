@@ -1,0 +1,23 @@
+{% extends 'posts/layout.html' %}
+
+{% block body %}
+    <table border="1">
+        <tr>
+          <th scope="col">Title</th>
+          <th scope="col">Author</th>
+          <th scope="col" >created_at</th>
+          <th scope="col" >details</th>
+        </tr>
+        <tr>
+          <td>{{ article.title }}</td>
+          <!-- The following two cells will appear under the same header -->
+          <td>{{ article.author }}</td>
+          <td>{{ article.created_at }}</td>
+          <td>{{ article.details }}</td>
+        </tr>
+      </table>
+
+      <div>
+          <a href='/'> HOME</a>
+      </div>
+{% endblock %}

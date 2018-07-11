@@ -1,0 +1,13 @@
+{% extends 'posts/layout.html' %}
+
+{% block body %}
+    <ul>
+        {% for art in articles %}
+        <a href='/posts/details/{{art.id}}'>
+            <li>
+                <p >{{ art.title }}</p>
+            </li>
+        </a>
+        {% endfor %}
+    </ul>
+{% endblock %}
